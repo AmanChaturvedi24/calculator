@@ -17,6 +17,7 @@ for(let i=0; i<btn.length; i++)
        }
        else if(this.innerHTML=="Clear"){
            value.innerHTML = ""; 
+           navigator.vibrate(200);
            console.log("done clear");
         }
         else{
