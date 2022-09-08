@@ -14,7 +14,7 @@ body{
 
 }
 .calculator{
-    position: relative;
+    position: fixed;
     width: 340px;
     padding: 20px;
     border-radius: 20px;
@@ -26,6 +26,7 @@ body{
     display: grid;
 }
 .calculator .buttons #value{
+    background: rgb(205, 204, 204);
     position: relative;
     grid-column: span 4;
     user-select: none;
@@ -36,7 +37,7 @@ body{
     height: 100px;
     line-height: 100px;
     box-shadow: inset 5px 5px 10px rgb(0,0,0,0.1),
-    inset -5px -5px 20px #fff ;
+    inset -5px -5px 20px rgb(230, 230, 230) ;
     border-radius: 10px;
     margin-bottom: 12px;
     padding: 0 20px;
@@ -88,9 +89,65 @@ body{
     color: #fff;
     border: 2px solid #edf1f4;
 }
-.calculator .buttons span#clear:active,
+
 .calculator .buttons span#plus:active,
 .calculator .buttons span#clear:active{
     box-shadow: inset 5px 5px 10px rgba(0,0,0,0.3),
     inset -5px -5px 10px rgba(0,0,0,0.1);
+}
+.dark{
+    background: #282c2f;
+}
+.dark .calculator .buttons span#plus,
+.dark .calculator .buttons span#clear{
+    color: rgb(211, 209, 209);
+    border: 2px solid #333;
+}
+.dark .calculator .buttons span#plus:active,
+.dark .calculator .buttons span#clear:active{
+   box-shadow: inset 5px 5px 10px rgb(0,0,0,0.3),
+   inset -5px -5px 10px rgba(0,0,0,0.1);
+}
+.dark .calculator{
+    background: #33393e;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.25),
+    -15px -15px 20px rgba(255,255,255,0.1)
+}
+
+.dark .calculator .buttons #value{
+
+    background: #535455;
+    color: rgb(192, 191, 191);
+    box-shadow: inset 15px 15px 20px rgba(8, 8, 8, 0.5),
+    inset -15px -15px 20px rgba(255,255,255,0.1) ;
+}
+
+.dark .calculator .buttons span{
+    color: rgb(206, 203, 203);
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255,255,255,0.1);
+}
+.dark .calculator .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 10px rgba(255,255,255,0.1);
+}
+.theme{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #555;
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.1),
+    -5px -5px 10px #fff;
+}
+.dark .theme{
+    background: #edf1f4;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.25),
+    -5px -5px 10px rgba(255,255,255,0.1);
 }
