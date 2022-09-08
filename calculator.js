@@ -1,5 +1,5 @@
-let btn = (document.querySelectorAll('span'));
 console.log("i m in")
+let btn = (document.querySelectorAll('span'));
 let button = document.querySelector('.buttons');
 let value = document.getElementById('value');
 let theme =document.querySelector('.theme');
