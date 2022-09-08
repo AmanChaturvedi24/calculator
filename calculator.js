@@ -11,7 +11,7 @@ for(let i=0; i<btn.length; i++)
         
 
         if(this.innerHTML=="="){
-        navigator.vibrate(20);
+        navigator.vibrate(40);
         value.innerHTML = eval(value.innerHTML);
         console.log("done =");
 
