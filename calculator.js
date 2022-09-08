@@ -11,13 +11,13 @@ for(let i=0; i<btn.length; i++)
         
 
         if(this.innerHTML=="="){
-        navigator.vibrate(40);
+        navigator.vibrate(50);
         value.innerHTML = eval(value.innerHTML);
         console.log("done =");
 
        }
        else if(this.innerHTML=="Clear"){
-           navigator.vibrate(50);
+           navigator.vibrate(60);
            value.innerHTML = ""; 
            console.log("done clear");
         }
